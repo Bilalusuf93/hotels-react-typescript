@@ -14,10 +14,10 @@ export const HotelRefiners = (props: Refiners) => {
                     type='text'
                     name='search-refiner'
                     id='search-refiner'
-                    value={searchQuery}
+                    defaultValue={searchQuery}
                     placeholder={AppConstants.Hotel_Filters.SEARCH_PLACE_HOLDER}
                     onChange={(e) => (
-                        updateRefiner(e, AppConstants.Hotel_Filters.NAME)
+                        updateRefiner && updateRefiner(e, AppConstants.Hotel_Filters.NAME)
                     )}
                 />
             </div>
@@ -28,11 +28,11 @@ export const HotelRefiners = (props: Refiners) => {
                     name='price-refiner'
                     id='price-refiner'
                     step='1'
-                    value={price || 0}
+                    defaultValue={price || 0}
                     min={minPrice.toString()}
                     max={maxPrice.toString()}
                     onChange={(e) => (
-                        updateRefiner(e, AppConstants.Hotel_Filters.PRICE)
+                        updateRefiner && updateRefiner(e, AppConstants.Hotel_Filters.PRICE)
                     )}
                 />
                 <output name="rangeVal">

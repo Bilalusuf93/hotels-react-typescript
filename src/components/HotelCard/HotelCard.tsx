@@ -25,7 +25,7 @@ const HotelCard = (props: HotelsCard) => {
                         type='button'
                         className={AppConstants.Sort_By_Value.NAME === sortBy.path ? 'active' : ''}
                         value={AppConstants.Sort_By_Labels.SORT_BY_NAME}
-                        onClick={() => sortByNamePrice(AppConstants.Sort_By_Value.NAME)}
+                        onClick={() => sortByNamePrice && sortByNamePrice(AppConstants.Sort_By_Value.NAME)}
                     />
                 </div>
                 <div>
@@ -33,7 +33,7 @@ const HotelCard = (props: HotelsCard) => {
                         className={AppConstants.Sort_By_Value.PRICE === sortBy.path ? 'active' : ''}
                         type='button'
                         value={AppConstants.Sort_By_Labels.SORT_BY_PRICE}
-                        onClick={() => sortByNamePrice(AppConstants.Sort_By_Value.PRICE)}
+                        onClick={() => sortByNamePrice && sortByNamePrice(AppConstants.Sort_By_Value.PRICE)}
                     />
                 </div>
             </div>

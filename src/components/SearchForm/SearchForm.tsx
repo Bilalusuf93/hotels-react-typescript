@@ -13,7 +13,8 @@ export const SearchForm = (props: SearchStatePropsTypes) => {
                 type='date'
                 id='fromDate'
                 name='from-date'
-                value={props.fromDate}
+                defaultValue={props.fromDate}
+                // value={props.fromDate}
                 onChange={props.updateFromDate}
                 min={AppConstants.Search.MIN_DATE}
                 max={AppConstants.Search.MAX_DATE}
@@ -27,7 +28,8 @@ export const SearchForm = (props: SearchStatePropsTypes) => {
                 type='date'
                 id='toDate'
                 name='to-date'
-                value={props.toDate}
+                defaultValue={props.toDate}
+                // value={props.toDate}
                 onChange={props.updateToDate}
                 min={props.fromDate}
                 max={AppConstants.Search.MAX_DATE}

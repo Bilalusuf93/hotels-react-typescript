@@ -27,7 +27,7 @@ export interface HotelsCard {
     hotelList: Hotel[];
     sortBy: Sort;
     totalNights: number;
-    sortByNamePrice(sortBy: string): void;
+    sortByNamePrice?(sortBy: string): void;
 
 }
 export interface INotFound {
@@ -39,7 +39,7 @@ export interface Refiners {
     maxPrice: Number;
     searchQuery: string;
     price?: number;
-    updateRefiner(event: React.ChangeEvent<HTMLInputElement>, name: string): void
+    updateRefiner?(event: React.ChangeEvent<HTMLInputElement>, name: string): void
 }
 
 export interface SearchStatePropsTypes {

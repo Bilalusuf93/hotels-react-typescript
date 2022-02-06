@@ -12,7 +12,7 @@ import { ApiError, GenericApiResponse, Hotel, Sort } from '../../types/state';
 import { HotelRefiners } from '../HotelRefiners/HotelRefiners';
 import { AppConstants } from '../../appConstants';
 import HotelCard from '../HotelCard/HotelCard';
-import NotFound from '../NotFound/NotFound';
+import NotFound from '../common/NotFound/NotFound';
 
 export const Hotels = () => {
 

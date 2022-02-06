@@ -1,5 +1,5 @@
 import React from 'react';
-import {INotFound} from '../../types/state';
+import {INotFound} from '../../../types/state';
 import './NotFound.scss'
 
 function NotFound(props: INotFound) {
