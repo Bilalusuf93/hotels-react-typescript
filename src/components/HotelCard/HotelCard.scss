@@ -1,0 +1,40 @@
+@import "../scss/variables";
+@import "../scss/layout";
+
+.sort-item {
+  @extend .two-column;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px;
+
+  .total-Nights {
+    display: flex;
+    justify-content: flex-start;
+    span {
+      font-weight: bold;
+      margin: 0 5px;
+    }
+  }
+  .sort-button {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      row-gap: 10px;
+      input {
+        cursor: pointer;
+        padding: 10px 30px;
+        border: 2px solid $border-color;
+      }
+  
+      .active {
+        background-color: $active-bg-color;
+        -moz-box-shadow: $gray-300-shadow;
+        -webkit-box-shadow: $gray-300-shadow;
+        box-shadow: $gray-300-shadow;
+      }
+  }
+  
+}
+.hotel-list {
+  @extend .two-column;
+}

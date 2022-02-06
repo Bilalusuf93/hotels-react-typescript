@@ -1,0 +1,54 @@
+@import './variables';
+
+.common-input-properties {
+  border: 2px solid $border-color;
+  color: $black;
+  outline: none;
+  width: 80%;
+}
+
+input[type='text'],
+input[type='date'],
+// input[type='button'],
+input[type='range'] {
+  @extend .common-input-properties;
+}
+output[name='rangeVal'] {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+ 
+}
+
+input[type='button'] {
+    cursor: pointer;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  height: 1px;
+  border-radius: 20px;
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: $border-color;
+  }
+  &::-webkit-slider-thumb {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: $border-color;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -13px;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background: $border-color;
+    border-radius: 50%;
+  }
+}

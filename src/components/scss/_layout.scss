@@ -1,0 +1,15 @@
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+}
+
+.flex_design {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }

@@ -1,0 +1,30 @@
+@import './variables';
+
+@media (max-width: $breakpoint-tablet) {
+  .grid-view {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mobile-grid-design {
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+  }
+  .search-container {
+    @extend .mobile-grid-design;
+      input[type='button'] {
+        float: none !important;
+        width: 100% !important;
+      }
+  }
+  .search-result-container, .hotel-list{
+    @extend .mobile-grid-design;
+  }
+  .sort-section {
+    @extend .mobile-grid-design;
+    height: auto !important;
+    row-gap: 20px;
+    div {
+      flex-direction: column;
+    }
+  }
+}

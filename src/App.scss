@@ -1,0 +1,9 @@
+@import './components/scss/variables';
+@import './components/scss/layout';
+@import './components/scss/input';
+
+.App {
+  color: $black;
+  justify-content: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,19 @@
+.refiner-section{
+    margin-top: 50px;
+    div {
+      margin: 10px 0;
+      img {
+        position: absolute;
+        margin: 10px 0 0 10px;
+        width: 20px;
+        height: 20px;
+        opacity: .4;
+      }
+      input[type='text'] {
+        border-radius: 20px;
+        height: 34px;
+        padding-left: 35px;
+        width: 70%;
+      }
+    }
+}
