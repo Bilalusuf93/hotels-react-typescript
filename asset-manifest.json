@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/hotels-react-typescript/static/css/main.05ec2e43.css",
+    "main.js": "/github.io/hotels-react-typescript/static/js/main.34b2ab3f.js",
+    "static/js/787.e3ca85cb.chunk.js": "/github.io/hotels-react-typescript/static/js/787.e3ca85cb.chunk.js",
+    "static/media/search-icon.svg": "/github.io/hotels-react-typescript/static/media/search-icon.70a801c167deb8759985a4529b6879f1.svg",
+    "index.html": "/github.io/hotels-react-typescript/index.html",
+    "main.05ec2e43.css.map": "/github.io/hotels-react-typescript/static/css/main.05ec2e43.css.map",
+    "main.34b2ab3f.js.map": "/github.io/hotels-react-typescript/static/js/main.34b2ab3f.js.map",
+    "787.e3ca85cb.chunk.js.map": "/github.io/hotels-react-typescript/static/js/787.e3ca85cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05ec2e43.css",
+    "static/js/main.34b2ab3f.js"
+  ]
+}
